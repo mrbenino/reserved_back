@@ -9,7 +9,9 @@ class Reserved extends Model
   protected $fillable = [
     'hall',
     'date',
-    'name'
+    'name',
+    'rangeTimeStart',
+    'rangeTimeEnd'
   ];
   protected $hidden = [
     'created_at',

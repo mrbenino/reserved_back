@@ -18,6 +18,8 @@ class CreateReservedsTable extends Migration
             $table->string('hall');
             $table->string('date');
             $table->string('name');
+            $table->string('rangeTimeStart');
+            $table->string('rangeTimeEnd');
             $table->timestamps();
         });
     }

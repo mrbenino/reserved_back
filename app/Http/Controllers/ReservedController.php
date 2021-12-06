@@ -13,7 +13,9 @@ class ReservedController extends Controller
     $reserved = Reserved::create([
       'hall' => $request->hall,
       'date' => $request->date,
-      'name' => $request->name
+      'name' => $request->name,
+      'rangeTimeStart' => $request->rangeTimeStart,
+      'rangeTimeEnd' => $request->rangeTimeEnd,
     ]);
     return response()->json($reserved);
   }
